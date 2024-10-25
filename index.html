@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Fiza Shaikh</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/fiza-profile.png">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="first-container">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div style="height: 80vh;" class="intro col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br/><span class="c-orange">Fiza Shaikh</span>
+          </h2>
+          <p class="text-muted">
+            Hi, I hope you’re doing great. I'm an SEO freelancer. I work with businesses to make their websites easier to find on search engines like Google. My job is to bring more people to your site and help your business grow online. If you're looking to improve your online presence, I'm here to help.
+          </p>
+          <button style="width: fit-content;" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <!-- here download attribute is used for adding download functionality to button  -->
+            <a
+              href="Fiza-Resume.pdf"
+              download="SampleCV"
+              style="text-decoration: none;color: #fff;"
+              >Download CV</a
+            >
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="">
+          <img src="images/fiza-profile.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+ 
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="skills">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          SEO Expert for Enhanced <br> Website Visibility & Rankings
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>On-Page</h4>
+              <p class="text-muted">
+                I excel in optimizing website content, including meta tags, headers, and images, to improve keyword relevance and enhance user experience. My focus is on creating engaging, high-quality content that drives organic traffic.
+              </p>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Off-Page</h4>
+              <p class="text-muted">
+                I have a proven track record in building high-quality backlinks and managing social media strategies to increase domain authority and brand visibility. I leverage outreach and relationship-building techniques to enhance online reputation and drive referral traffic.
+              </p>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Technical</h4>
+              <p class="text-muted">
+                I am proficient in analyzing website structure, improving site speed, and ensuring mobile-friendliness. My skills include optimizing crawlability and indexability, as well as implementing structured data to enhance search engine results.
+              </p>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="section-2">
+        <div class="Seoimage"><img src="images/Seoimage.webp" alt=""></div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Effective SEO Tools I Use to Enhance Performance</h3>
+            <p class="text-muted">
+              To improve SEO performance, I use tools like Google Analytics and Search Console for traffic insights, Ahrefs and SEMrush for keywords and competitors, and Yoast for on-page tweaks. 
+            </p>
+            <p class="text-muted">
+              Screaming Frog also helps find technical issues quickly and easily.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/client-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">BM Coder</h4>
+                <p>A leading software development company specializing in custom CRM solutions and Laravel development for businesses.</p>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/client-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Data Storage Solutions</h4>
+                <p> Experts in data recovery and secure storage solutions, helping individuals and businesses protect and retrieve vital information.</p>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/client-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Diz Global Solutions</h4>
+                <p>A global IT and digital marketing agency delivering comprehensive solutions in SEO, web development, and brand growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/client-4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Franchise AVS</h4>
+                <p>A franchise consultancy that connects entrepreneurs with top franchise opportunities and provides support in business setup.</p>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/chiku.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Chiku Cab</h4>
+                <p>A trusted cab service provider in India, offering reliable transportation for city commutes, airport transfers, and outstation trips.</p>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/client-6.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">BM Coder</h4>
+                <p>A leading software development company specializing in custom CRM solutions and Laravel development for businesses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- Services section start here -->
+<section id="services">
+  <h2>What Services I <br> Provide You</h2>
+  <div class="services-container">
+      <div class="service-box">
+          <img src="https://img.icons8.com/color/96/000000/search.png" alt="Search Strategy">
+          <h3>Search Strategy</h3>
+          <p>We help you develop the right search strategy to grow your business and increase visibility.</p>
+      </div>
+      <div class="service-box">
+          <img src="images/speaker.png" alt="Social Marketing">
+          <h3>Compititor Analysis</h3>
+          <p> Evaluating competitors' strengths and strategies to uncover opportunities and refine your own approach.</p>
+      </div>
+      <div class="service-box">
+          <img src="images/planning.png" alt="Business Planning">
+          <h3>Algorithm Update Adaptation</h3>
+          <p> Adjusting SEO strategies to align with the latest search engine algorithm changes.          </p>
+      </div>
+      <div class="service-box">
+          <img src="images/link-building.png" alt="Business Planning">
+          <h3>Link Building </h3>
+          <p>Acquiring high-quality backlinks to boost website authority and improve organic search rankings.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/report.png" alt="Business Planning">
+          <h3>keyword Research Analysis </h3>
+          <p>Identifying and analyzing valuable keywords to attract targeted organic traffic.          </p>
+      </div>
+      <div class="service-box">
+        <img src="images/content.png" alt="Business Planning">
+          <h3>Content optimization </h3>
+          <p>Enhancing content quality and relevance to improve search engine rankings and user engagement.          </p>
+      </div>
+  </div>
+</section>
+ <!-- Services section end here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Varanasi , Uttar Pradesh , India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 9151773938</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>shaikhfiza9091@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>marketingblaze.in</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+     <!-- FAQ section start here -->
+     <section class="faq-section" id="faq">
+      <h1 class="faq-heading">Frequently Asked Questions</h1>
+      <div class="faq">
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>What SEO services do you offer?</span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                I offer services like keyword research, on-page optimization, content strategy, link building, technical SEO audits, and analytics tracking.
+              </div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>How long does it take to see SEO results?</span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Typically, you’ll start seeing improvements within 3-6 months, but results vary based on competition and the website’s current standing.</div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>Do you provide reports on SEO progress? </span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Yes, I provide regular reports with updates on keyword rankings, traffic growth, and other performance metrics to track progress.
+              </div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>Can you help with local SEO?</span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Absolutely! I can optimize your site for local search, improve local listings, and increase visibility in your target area.
+              </div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>How much does SEO cost?                  </span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Costs depend on the project’s scope, competitiveness of the industry, and your specific goals. I’ll work with you to create a budget that meets your needs.
+              </div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>
+                    Will I need to continue SEO after initial optimization?   </span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Yes, SEO is an ongoing process. Regular updates and optimizations are necessary to maintain and improve rankings over time.
+              </div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>Can you help with SEO for e-commerce websites? </span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Yes, I specialize in e-commerce SEO, focusing on product page optimization, category structures, and targeting relevant keywords to drive traffic and sales.
+              </div>
+          </div>
+          <div class="question" onclick="toggleFAQ(this)">
+              <div class="faq-title">
+                  <span>Do you work with small businesses?                  </span>
+                  <span class="faq-toggle">+</span>
+              </div>
+              <div class="answer">
+                Absolutely! I help small businesses build their online presence and compete effectively in their local markets.
+              </div>
+          </div>
+      </div>
+  </section>
+     <!-- FAQ section end here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#services">Services</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#faq">FAQ</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+      function toggleFAQ(element) {
+    const answer = element.querySelector('.answer');
+    const toggle = element.querySelector('.faq-toggle');
+
+    if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        toggle.innerText = '+';
+    } else {
+        answer.style.display = 'block';
+        toggle.innerText = '-';
+    }
+}
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

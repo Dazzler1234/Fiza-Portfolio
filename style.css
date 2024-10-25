@@ -1,0 +1,518 @@
+/* appling google font over the website  */
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+/* styling menu icon */
+.nav-menu{
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a{
+  color: black;
+  position: relative;
+}
+.navbar-nav a:hover{
+  color: #fca61f;
+}
+.navbar-nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  top: 35px;
+  position: absolute;
+  background: #fca61f;
+  width: 0;
+}
+.navbar-nav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+/* styling contact btn  */
+
+.c-btn{
+  border: none;
+  background: #fca61f;
+  color: #fff;
+  font-size: 1.2rem;
+}
+/* styling home section starts */
+.home{
+  /* background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%); */
+  background-color: #f3f3f3;
+  padding: 30px 0px 10px 0px;
+}
+.home h2{
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.c-orange{
+  color: #6f34fe;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.home p{
+  width: fit-content;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.h-btn:hover{
+  background: #6f34fe;
+  color: #fff;
+}
+.link{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fca61f;
+  position: relative;
+}
+.link::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 20px;
+  background-color: #6f34fe;
+}
+.link:hover{
+  color: #6f34fe;
+}
+/* .link:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
+/* 
+@keyframes floatimg {
+  0%{
+      transform: translateX(0);
+  }
+  50%{
+      transform: translateX(-24px);
+  }
+  100%{
+      transform: translateX(0);
+  }
+} */
+ .main-content{
+  display: flex;
+ }
+.intro{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-container{
+  display: flex;
+  justify-content: space-around;
+}
+/* expertise section starts */
+.heading small{
+  color: #6f34fe;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.heading h3{
+  margin-top: 0.5rem;
+  color: #3f396d;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.expertise h4{
+  color: #3f396d;
+  font-weight: 700;
+}
+.expertise a{
+  text-decoration: none;
+  color: #fca61f;
+}
+.expertise a:hover{
+  color: #6f34fe;
+}
+.expertise .service-card{
+  text-align: center;
+  padding: 15px 15px;
+  border-radius: 0.7rem;
+}
+
+/* skill section starts */
+.skill{
+  background-color: #f3f3f3;
+}
+.progress-card img{
+  max-width: 150px;
+}
+.section-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+.circular-progress{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-value{
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.text{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.heading p{
+  font-size: 1.3rem;
+}
+
+/* portfolio section starts */
+#myBtnContainer{
+  margin-bottom: 45px;
+}
+#myBtnContainer button{
+border: none;
+color: black;
+background: transparent;
+font-size: 20px;
+font-weight: 600;
+cursor: pointer;   
+display: inline-block;
+margin: 0 25px;
+}
+#myBtnContainer button:hover{
+  color: #fca61f;
+}
+
+#myBtnContainer button:focus{
+  outline: none;
+}
+.post .content h4{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.post .card{
+  border: none;
+}
+
+
+/* blog section starts */
+.blog{
+  background-color: #f2f2ff;
+}
+.blog .blogpost .card{
+  border: none;
+  border-radius: 5%;
+}
+.nav-bg{
+  background-color: #fff;
+}
+
+.blog .blogpost small{
+  color: #6f34fe;
+  font-size: 1.1rem;
+}
+.blog .blogpost h4,.blogpost a{
+  color: #3f396d;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.blogpost a:hover{
+  color: #fca61f;
+}
+.blog .blogpost .read-more-btn{
+  text-decoration: none;
+  color: #fca61f;
+  font-size: 1.1rem;
+}
+.blog .blogpost .read-more-btn:hover{
+  color: #6f34fe;
+}
+/* styling modal group  */
+.btn-c{
+  margin-left: 94%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: -3%;
+}
+.btn-c i{
+  color: #fca61f;
+}
+.modal-body .content span{
+  font-size: 1rem;
+}
+.modal-body .content small{
+  font-size: 1rem;
+  color: #6f34fe;
+}
+/* contact section starts */
+.contact{
+  background-color: #f3f3f3;
+}
+.contact-details i{
+  font-size: 1.5rem;
+  color: #fca61f;
+}
+.contact-details p{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+  box-shadow: none;
+  border: 1px solid #fca61f;
+}
+.contact-form .form-control{
+  resize: none;
+  padding: 10px 10px;
+  width: 80%;
+}
+
+/* footer section starts */
+footer{
+  background-color: #211e39;
+}
+
+footer .link-group a{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+footer .link-group a:hover{
+  color: #fca61f;
+}
+.social-links button{
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+  color: #f33a7e;
+}
+.social-links button:hover{
+  color: #fff;
+}
+.social-links .dribble:hover{
+  background-color: #f33a7e;
+}
+.social-links .whatsapp{
+  color: #25D366;
+}
+.social-links .whatsapp:hover{
+  background-color: #25D366;
+}
+.social-links .behance{
+  color: #255afc;
+}
+.social-links .behance:hover{
+  background-color: #255afc;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 1.4rem;
+  background-color: #fca61f;
+  color: #fff;
+}
+/* FAq section start */
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-heading {
+  margin: 2rem 0; /* Adds space below the heading */
+}
+.faq {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.question {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-title {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  color: #f39c12;
+}
+
+.answer {
+  background-color: white;
+  color: #2c3e50;
+  padding: 15px;
+  display: none;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .faq-title {
+      font-size: 0.9rem;
+  }
+
+  .faq-toggle {
+      font-size: 1.2rem;
+  }
+
+  .answer {
+      font-size: 0.9rem;
+  }
+}
+/* FAq section ends */
+/* Services */
+
+
+#services h2{
+  padding: 20px 0;
+  font-size: 4rem;
+  text-align: center;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  flex: 1 1 400px;
+  max-width: 400px;
+  background-color: #f8f8f8;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+}
+
+.service-box img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-box {
+      max-width: 100%;
+      flex: 1 1 100%;
+  }
+}
+/* Services */
+
+@media (max-width: 768px) {
+  .section-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills, .info {
+    flex: none;
+    width: 100%;
+  }
+
+  .Seoimage img {
+    max-width: 50vw;
+  }
+
+  .small {
+    font-size: 1.5rem;
+  }
+
+  .text-muted {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Seoimage img {
+    max-width: 80vw;
+  }
+
+  .small {
+    font-size: 1.2rem;
+  }
+
+  .text-muted {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
