@@ -127,6 +127,7 @@ section.home-container {
       text-align: center;
       padding: 20px 5%; /* Reduce padding on smaller screens */
   }
+  
 
   .text-section {
       padding-right: 0;
@@ -139,6 +140,9 @@ section.home-container {
 
   .text-section p {
       font-size: 1em;
+  }
+  .image-section{
+    flex: none;
   }
 
   .image-section img {
