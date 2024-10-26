@@ -16,6 +16,7 @@
 
     <!-- custom css file -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="images/fiza-profile.png">
 
     <!-- google font link -->
@@ -88,17 +89,14 @@
     </nav>
     <!-- navbar ends here -->
 
+    
     <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="first-container">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div style="height: 80vh;" class="intro col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br/><span class="c-orange">Fiza Shaikh</span>
-          </h2>
-          <p class="text-muted">
-            Hi, I hope you’re doing great. I'm an SEO freelancer. I work with businesses to make their websites easier to find on search engines like Google. My job is to bring more people to your site and help your business grow online. If you're looking to improve your online presence, I'm here to help.
-          </p>
+    <section class="home-container">
+        
+      <!-- Text Section -->
+      <div class="text-section">
+          <h1>Hello! I Am <br><span style="color: #6A0DAD;">Fiza Shaikh</span></h1>
+          <p>Hi, I hope you’re doing great. I'm an SEO freelancer. I work with businesses to make their websites easier to find on search engines like Google. My job is to bring more people to your site and help your business grow online. If you're looking to improve your online presence, I'm here to help.</p>
           <button style="width: fit-content;" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
             <!-- here download attribute is used for adding download functionality to button  -->
             <a
@@ -108,13 +106,14 @@
               >Download CV</a
             >
           </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
-        </div>
-        <div class="">
-          <img src="images/fiza-profile.png" class="img-fluid" alt="" />
-        </div>
       </div>
-    </section>
+
+      <!-- Image Section -->
+      <div class="image-section">
+          <img src="images/fiza-profile.png" alt="Fiza Shaikh" /> <!-- Replace 'your-image.jpg' with the actual image path -->
+      </div>
+
+  </section>
     <!-- home section ends here -->
  
     <!-- expertise section starts -->
@@ -516,13 +515,16 @@
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
         <button href="" class="rounded-pill dribble">
-          <i class="bi bi-dribbble"></i>
+          <i class="bi bi-behance"></i>
         </button>
         <button href="" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
+          <a href="https://wa.me/"><i class="bi bi-whatsapp"></i></a>
+          
         </button>
         <button href="" class="rounded-pill behance">
-          <i class="bi bi-behance"></i>
+          <a href="https://www.linkedin.com/in/shaikhfiza/">
+            <i class="fa-brands fa-linkedin" style="color: #042e4e;"></i></a>
+          
         </button>
       </div>
       <hr class="text-muted my-4" />
